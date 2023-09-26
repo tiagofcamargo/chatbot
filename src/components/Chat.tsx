@@ -13,9 +13,9 @@ export function Chat() {
   });
 
   return(
-    <Card className="w-[440px] shadow-2xl bg-slate-900 shadow-red-500/100 border-none">
+    <Card className="w-[440px] shadow-2xl bg-slate-900 shadow-purple-500/100 border-none">
       <CardHeader>
-        <CardTitle className="text-slate-300">Sato7 Chatbot</CardTitle>
+        <CardTitle className="text-slate-300">Chat Bot</CardTitle>
         <CardDescription>Usando Vercel SDK para criar um chat bot</CardDescription>
       </CardHeader>
       <CardContent>
@@ -31,13 +31,13 @@ export function Chat() {
                 )}
                 {message.role === 'assistant' && (
                   <Avatar>
-                    <AvatarFallback className="text-red-600 font-bold">S7</AvatarFallback>
-                    <AvatarImage className="bg-slate-300 p-1" src="https://sato7.com.br/wp-content/uploads/2020/06/fav-150x150.png" />
+                    <AvatarFallback className="text-red-600 font-bold">Botzin</AvatarFallback>
+                    <AvatarImage className="bg-slate-300 p-1" src="https://static.vecteezy.com/system/resources/previews/010/054/157/large_2x/chat-bot-robot-avatar-in-circle-round-shape-isolated-on-white-background-stock-illustration-ai-technology-futuristic-helper-communication-conversation-concept-in-flat-style-vector.jpg" />
                   </Avatar>
-                )}
+                )}ß
                 <p className="leading-relaxed">
                   <span className="block font-bold text-slate-300">
-                    {message.role === 'user' ? 'Usuário:' : 'S7 Daileon'}
+                    {message.role === 'user' ? 'Usuário:' : 'Botzin'}
                   </span>
                   {message.content}
                 </p>
